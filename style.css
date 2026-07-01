@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#090909;
+    color:white;
+}
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,.70);
+    backdrop-filter:blur(10px);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+}
+
+.brand img{
+    width:70px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00b7ff;
+}
+
+.hero{
+
+    height:100vh;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.70)),
+
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=2000");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-logo{
+
+    width:180px;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    margin-bottom:10px;
+
+    color:#00b7ff;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    background:#00b7ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid #00b7ff;
+
+}
