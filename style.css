@@ -1,109 +1,144 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+<!-- FOOTER -->
+<footer class="bg-black text-center text-light py-4">
+    <div class="container">
+
+        <img src="logo.png" width="80" class="mb-3">
+
+        <h5 class="fw-bold text-primary">Vivid Performance</h5>
+
+        <p class="text-secondary mb-2">
+            Professional ECU Tuning
+        </p>
+
+        <p class="small mb-0">
+            © 2026 Vivid Performance • Sva prava zadržana
+        </p>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+/* SECTIONS */
+
+.section-title{
+    font-size:42px;
+    font-weight:800;
+    color:#00aaff;
+    margin-bottom:20px;
 }
 
-html{
-scroll-behavior:smooth;
+.card{
+    background:#141414;
+    border:none;
+    border-radius:18px;
+    color:#fff;
+    transition:.35s;
 }
 
-body{
-background:#000;
-color:#fff;
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,170,255,.25);
 }
+
+.card i{
+    font-size:42px;
+    color:#00aaff;
+    margin-bottom:15px;
+}
+
+/* GALLERY */
+
+#gallery img{
+    border-radius:18px;
+    transition:.35s;
+    cursor:pointer;
+}
+
+#gallery img:hover{
+    transform:scale(1.03);
+    box-shadow:0 20px 45px rgba(0,170,255,.25);
+}
+
+/* ABOUT */
+
+#about{
+    background:#111;
+}
+
+#about h2{
+    color:#00aaff;
+    font-weight:800;
+}
+
+#about p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+/* CONTACT */
+
+#contact{
+    background:#0d0d0d;
+}
+
+#contact .btn{
+    border-radius:40px;
+    padding:15px 35px;
+    font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+    background:#050505;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer img{
+    width:70px;
+}
+
+footer h5{
+    color:#00aaff;
+    font-weight:700;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
 
 .hero{
-height:100vh;
-background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80") center center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-position:relative;
-text-align:center;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.65);
-}
-
-.navbar{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-background:rgba(0,0,0,.85);
-backdrop-filter:blur(8px);
-z-index:1000;
-}
-
-.nav-logo img{
-width:52px;
-height:52px;
-border-radius:50%;
-object-fit:cover;
-display:block;
-}
-
-.nav-links{
-display:flex;
-gap:18px;
-}
-
-.nav-links a{
-color:#fff;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-padding:20px;
-}
-
-.hero-logo{
-display:none;
+    text-align:center;
 }
 
 .hero h1{
-font-size:clamp(38px, 10vw, 72px);
-line-height:1;
-color:#00b7ff;
-margin-bottom:20px;
-text-align:center;
-word-break:break-word;
-}
-
-.hero-content{
-max-width:95%;
-margin:auto;
-padding:20px;
+    font-size:48px;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:30px;
+    font-size:18px;
 }
 
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:#00b7ff;
-color:#fff;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
+.navbar-brand img{
+    height:50px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.section-title{
+    font-size:32px;
+}
+
+.btn-primary,
+.btn-outline-light{
+    width:100%;
+    margin-bottom:12px;
+}
+
 }
