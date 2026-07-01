@@ -49,10 +49,11 @@ z-index:1000;
 }
 
 .nav-logo img{
-width:60px;
-height:60px;
+width:52px;
+height:52px;
 border-radius:50%;
 object-fit:cover;
+display:block;
 }
 
 .nav-links{
@@ -78,9 +79,18 @@ display:none;
 }
 
 .hero h1{
-font-size:48px;
+font-size:clamp(38px, 10vw, 72px);
+line-height:1;
 color:#00b7ff;
-margin-bottom:15px;
+margin-bottom:20px;
+text-align:center;
+word-break:break-word;
+}
+
+.hero-content{
+max-width:95%;
+margin:auto;
+padding:20px;
 }
 
 .hero p{
